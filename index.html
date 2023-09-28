@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous">
+</head>
+<body>
+    <!-- primary - coleção de cores -->
+    <!-- <div class="container bg-primary mt-4">container</div> -->
+
+    <!-- .container-sm.bg-secundary.my-4{container-sm} -->
+    <!-- <div class="container-sm bg-secundary my-4">container-sm</div> -->
+
+    <!-- p é para padding incondicional -->
+    <!-- <div class="container-md bg-danger mt-4 p-4">container-md</div> -->
+
+    <!-- <div class="container-lg bg-info mt-3 px-4">container-lg</div> -->
+    <!-- um container large com background info com margin top 3 e padding no eixo x 4 -->
+    <!-- queremos padding de quando a pesoa começa a ler - visto que algumas pessoas leem da esquerda para a direita e algumas não -->
+
+    <!-- <div class="container border p-5 mt-2"> -->
+        <!-- função do container: determinar qual a área horizontalmente a ser utilizada pela aplicação, em função do tamanho da tela (para responsividade da tela)-->
+        <!-- não colocamos a row direto no comando no container porque se não fica desorganizado para o css (e tb não conseguimos definir quem emparelha em cada linha com quem) -->
+        <!-- row é para definir quem fica na mesma linha com quem, col é para definir quantas colunas tem cada caixinha -->
+        <!-- <div class="row">
+            <div class="col-3 border">
+                03 colunas
+            </div>
+            <div class="col-2 mt-2 border">
+                2 colunas
+            </div>
+        </div> -->
+
+        <!-- <div class="row">
+            <div class="col-12 mt-2 border">7</div>
+            <div class="col-4 mt-2 border">4</div>
+            <div class="col-2 mt-2 border">2</div>
+        </div> -->
+<!-- 
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mt-2 border">sm-12 md-6</div> -->
+            <!-- quando ela for pelo menos small, ela terá 12 colunas. quando ela for pelo menos média, ela passará a ocupar somente seis colunas. quando as classes estiverem na mesma row, existe a chance de ficar as duas juntass. portanto, vai depender da configuração de cada um para cada container e a quantidade de colunas que cada uma ocupa -->
+        <!-- </div> -->
+
+    <!-- </div> -->
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-5 col-lg-10">caixa 01</div>
+            <div class="col-sm-12 col-md-7 col-lg-2">caixa 02</div>
+            <div class="col-sm-12 col-md-2- col-lg-11">caixa 03</div>
+            <div class="col-sm-12 col-md-10 col-lg-1">caixa 04</div>
+        </div>
+    </div> -->
+
+    <div class="container border py-5 mt-2">
+        <!-- <div class="row">
+            <div class="col border mt-2 bg-primary">a</div>
+            <div class="col border mt-2 bg-secundary">b</div>
+            <div class="col border mt-2 bg-danger">c</div>
+        </div>
+        <div class="row">
+            <col class="border mt-5">auto</col> -->
+            <!-- quando o layoute é automático, o bootstrap vai tirar as borders e as margins/paddings para dar tudo 12. dessa forma, ele vai encaixando para dar 12 -->
+            <!-- quando você não fala quantas colunas, é o mobile first: a caixinha vai ocupar 100% das colunas ao presumir que você está acessando de um dispositivo com a tela muito pequena -->
+            <!-- <div class="col-5 border mt-2">5</div>
+            <div class="col-4 border mt-2">2</div> -->
+
+            <!-- <div class="row">
+                <div class="col-4 border mt-2 order-2">a</div>
+                <div class="col-4 border mt-2 order-3">b</div>
+                <div class="col-4 border mt-2 order-1">c</div>
+            </div> -->
+
+            <!-- offset: deslocamento em número de colunas -->
+            <!-- <div class="row">
+                <div class="col-md-6 offset-md-3 border-my-2">col: 6, off:3</div>
+            </div> -->
+
+            <!-- <div class="row">
+                <div class="border my-2 col-md-4 offset-md-2"></div>
+                <div class="border my-2 col-md-3 offset-md-3"></div>
+            </div> -->
+
+
+            <!-- justify-content opera no eixo principal. align-items opera no eixo secundário. por padrão, o eixo principal do bootstrao é o row. entretanto, podemos configurar o eixo principal para ser o eixo column. -->
+            <!-- <div class="row align-items-start border bg-light" style="height: 200px;"></div>
+            <div class="row align-items-center border bg-light" style="height: 200px;">
+            <div class="col border">top(start de cima para baixo)</div></div> -->
+            <!-- estamos querendo dizer, alinha as caixas verticalmente no começo (verticalmente porque estamos usando os eixos padrão do bootstrap) -->
+
+
+        <!-- </div> -->
+        <div class="row">
+            <div class="d-flex bg-light border my-2">
+                <div class="p-4 border mx-3">a</div>
+                <div class="p-4 border mx-3">b</div>
+                <div class="p-4 border mx-3">c</div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="d-flex flex-row-reverse bg-light border my-2">
+            <!--para começarmos o conteúdo da direita para a esquerda -->
+            <div class="p-4 border mx-3">a</div>
+            <div class="p-4 border mx-3">b</div>
+            <div class="p-4 border mx-3">c</div>
+        </div>
+        <div class="row">
+            <div class="d-flex flex-column bg-light border my-2">
+                <!--para começarmos o conteúdo da direita para a esquerda -->
+                <div class="p-4 border mx-3">a</div>
+                <div class="p-4 border mx-3">b</div>
+                <div class="p-4 border mx-3">c</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex flex-column-reverse bg-light border my-2">
+                <!--para começarmos o conteúdo da direita para a esquerda -->
+                <div class="p-4 border mx-3">a</div>
+                <div class="p-4 border mx-3">b</div>
+                <div class="p-4 border mx-3">c</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-xl bg-primary mt-3 py-3">container xl</div> -->
+    <script scr href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"></script>
+</body>
+</html>
