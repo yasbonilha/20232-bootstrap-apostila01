@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container mt-4 border">
+        essas classes significam que o container é o padrão (só fica em 100% da tela em uma extra small), com cor de fundo daquela caixa primária cores do bootstrap, e com uma margem no topo de 4 unidades de medida
+    </div>
+
+    <div class="container-fluid bg-primary mt-4">
+        o container fluido tem ocupação de 100% da tela independentemente do tamanho dela
+    </div>
+
+    <div class="container-sm bg-primary mt-5">
+        container small com margin top 05
+    </div>
+
+    <div class="container-md bg-primary mt-5">
+        container medium com margin top 5
+    </div>
+
+    <div class="container mt-2 p-5 border">
+        <!-- um elemento que só ocupa 100% do espaço horizontal quando a tela é extra small -->
+        <div class="row">
+            <!-- vamos determinar aqui uma linha (daquelas colunas que acabamos de determinar) -->
+            <div class="col-2 mt-2 border">
+                2 colunas
+                <!-- a linhazinha que vemos é a borda que colocamos para o container e o elemento de duas colunas -->
+            </div>
+            <div class="col-sm-2 col-md-6 mt-2 border">
+                col-sm-2 col-md-6 
+                - enquanto ela estiver no extra small, ela vai estar com as 12 colunas. a partir do small, terá duas colunas. a partir do md, terá seis colunas
+                <!-- a linhazinha que vemos é a borda que colocamos para o container e o elemento de duas colunas -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-2 border">
+                largura igual, sem empilhar
+                <!-- para fazer todas as caixinhas caberem com a largura igual, sem empilhar, não atribuímos uma quantidade de colunas a elas (layoute automático). quando atribuímos uma quantidade de colunas para alguns elementos e não atribuímos a outros, o bootstrap se encarrega de completar a linha com o número certo de colunas para cada elemento -->
+            </div>
+            <div class="col mt-2 border">
+                largura igual, sem empilhar
+            </div>
+            <div class="col mt-2 border">
+                largura igual, sem empilhar
+            </div>
+            
+            <div class="col-md mt-2 border">
+                largura igual, sem empilhar
+                <!-- quando colocamos uma condição para ele não empilhar, o bootstrap vai adotar a ideia de 'mobile first', ou seja, até a condição que você colocou, cada elemento vai ocupar as 12 colunas pois teoricamente você está em um dispositivo pequeno, após essa condição, ele vai passar a tentar encaixar todos os elementos na mesma linha sem empilhar. -->
+            </div>
+            <div class="col-md mt-2 border">
+                largura igual, sem empilhar
+            </div>
+            <div class="col-md mt-2 border">
+                largura igual, sem empilhar
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 border mt-2 order-2">
+                sou o a
+            </div>
+
+            <div class="col-4 border mt-2 order-3">
+                sou o b
+            </div>
+
+            <div class="col-4 border mt-2 order-1">
+                sou o c
+                <!-- order: ordenar os elementos dentro da coluna -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-2 p-5 border">
+        <!-- um elemento que só ocupa 100% do espaço horizontal quando a tela é extra small -->
+        <div class="row align-items-start border-my-2" style="height:200px">
+            <!-- vamos determinar aqui uma linha (daquelas colunas que acabamos de determinar) -->
+            <div class="col-2 mt-2 border">
+                oii aqui
+                <!-- a linhazinha que vemos é a borda que colocamos para o container e o elemento de duas colunas -->
+            </div>
+        </div>
+
+        <div class="row align-items-center border-my-2" style="height:200px">
+            <!-- vamos determinar aqui uma linha (daquelas colunas que acabamos de determinar) -->
+            <div class="col-2 mt-2 border">
+                2 colunas
+                <!-- a linhazinha que vemos é a borda que colocamos para o container e o elemento de duas colunas -->
+            </div>
+        </div>
+
+        <div class="row align-items-end border-my-2" style="height:200px">
+            <!-- vamos determinar aqui uma linha (daquelas colunas que acabamos de determinar) -->
+            <div class="col-2 mt-2 border">
+                2 colunas
+                <!-- a linhazinha que vemos é a borda que colocamos para o container e o elemento de duas colunas -->
+            </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
